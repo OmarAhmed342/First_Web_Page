@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Century Gothic",sans-serif;
+    transition: 0.3s;
+  }
+  a{
+      color: #fff;
+      text-decoration: none;
+
+  }
+  .navlist{
+    width:100%;
+    padding:10px 10vw;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.541);
+    text-align: center;
+  }
+  .navlist ul{
+    display:flex;
+    list-style: none;
+  }
+  .active, .navlist ul li:hover{
+      background: none;
+      border-radius: 3px;
+  }
+  .navlistul li:first-child{
+    flex: 1;
+  }
+  .navlist ul h4{ 
+    font-family: serif;
+    color: #fff;
+  }
+  .navlist ul a{
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .navlist ul a:hover{
+      color: #f80;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 25vh;
+    background-image:linear-gradient(135deg,#000000c3,#000000c3),
+                     url(../Desktop/BeFunky-collage\ \(3\).jpg) ;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(250, 244, 244);
+
+  }
+  .container h1 {
+    font-family: serif;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+  }
+  .container p{
+      margin-bottom: 30px;
+      letter-spacing: 0.5px;
+  }
+  .container button{
+    padding: 10px;
+    background: none ;
+    border: 1px solid #f80;
+  }
+  .container button:hover{
+      background: #f80;
+  }
+
+  .content-box{
+      width: 80%;
+      margin: auto;
+  }
+  .content-box>h2{
+    color: #ff8800;
+    text-align: center;
+    margin: 30px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+ }
+ .content-box>h2::before, .content-box>h2::after{
+    content: "-----";
+    letter-spacing: -5px;
+    font-weight: lighter;
+    margin: 0 20px 0 10px;
+ }
+  .content-box .row{
+      display: flex;
+      justify-content: space-between;
+  }
+  .content-box .column{
+    width: 32%;  
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .content-box img{
+      width: 100%;
+      height: auto;
+  }
+  .content-box .column a:last-child{
+    position: absolute;
+    width: 100%;
+    height:0;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    background: #ff8800c3;
+    text-align: center;
+    line-height: 20vw;
+    font-size: 3vw;
+}
+.content-box .column:hover a:last-child{
+    height: 100%;
+    top: 0;
+
+}
+
+.sub-menu-1{
+    display: none;
+}
+.navlist ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:rgba(0, 0, 0, 0.541);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navlist ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 15px;
+}
+.navlist ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.541);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.navlist ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+
+}
+
+footer{
+    margin-top: 40px;
+    background: #ccc;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+footer ul li{
+    margin: 10px;
+}
